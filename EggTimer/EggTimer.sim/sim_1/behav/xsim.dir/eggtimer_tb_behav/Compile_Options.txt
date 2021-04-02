@@ -1,0 +1,1 @@
+-wto "231548e789c549e28a1977d225bbf2e6" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "eggtimer_tb_behav" "xil_defaultlib.eggtimer_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

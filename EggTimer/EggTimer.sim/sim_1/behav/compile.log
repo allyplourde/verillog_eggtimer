@@ -1,0 +1,42 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1/sources_1/ip/c_counter_binary_9/c_counter_binary_9_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9_c_counter_binary_v12_0_10
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9_c_addsub_v12_0_10_fabric_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9_c_addsub_v12_0_10_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9_c_addsub_v12_0_10_lut6_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9_c_counter_binary_v12_0_10_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9_c_counter_binary_v12_0_10_viv
+INFO: [VRFC 10-311] analyzing module c_counter_binary_9_c_reg_fd_v12_0_3_viv
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1/sources_1/ip/c_counter_binary_1/c_counter_binary_1_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1_c_counter_binary_v12_0_10
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1_c_addsub_v12_0_10_fabric_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1_c_addsub_v12_0_10_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1_c_addsub_v12_0_10_lut6_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1_c_counter_binary_v12_0_10_legacy
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1_c_counter_binary_v12_0_10_viv
+INFO: [VRFC 10-311] analyzing module c_counter_binary_1_c_reg_fd_v12_0_3_viv
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1/sources_1/ip/c_counter_binary_1/c_counter_binary_1_sim_netlist.v:422]
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v:179]
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sources_1/imports/new/binary_to_BCD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_BCD
+INFO: [VRFC 10-2458] undeclared symbol x0_, assumed default net type wire [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sources_1/imports/new/binary_to_BCD.v:28]
+INFO: [VRFC 10-2458] undeclared symbol x3_x2_x1_x0, assumed default net type wire [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sources_1/imports/new/binary_to_BCD.v:29]
+INFO: [VRFC 10-2458] undeclared symbol not_x2x1x3, assumed default net type wire [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sources_1/imports/new/binary_to_BCD.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sources_1/new/set_time.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module set_time
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eggtimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sim_1/new/eggtimer_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eggtimer_tb
+WARNING: [VRFC 10-965] invalid size of integer constant literal [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sim_1/new/eggtimer_tb.v:59]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.srcs/sim_1/new/eggtimer_tb.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [W:/Desktop/Labs/EggTimer/ELEC3500-EggTimer_V1.0/EggTimer/EggTimer.sim/sim_1/behav/glbl.v:6]
