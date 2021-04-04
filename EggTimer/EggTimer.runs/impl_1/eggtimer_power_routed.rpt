@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Tue Mar 30 16:33:50 2021
+| Date             : Tue Mar 30 18:50:42 2021
 | Host             : me4166-11 running 64-bit major release  (build 9200)
 | Command          : report_power -file eggtimer_power_routed.rpt -pb eggtimer_power_summary_routed.pb -rpx eggtimer_power_routed.rpx
 | Design           : eggtimer
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.194 |
-| Dynamic (W)              | 0.097 |
+| Total On-Chip Power (W)  | 0.187 |
+| Dynamic (W)              | 0.090 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.1  |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        8 |       --- |             --- |
-| Slice Logic    |    <0.001 |      307 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       83 |     63400 |            0.13 |
+| Slice Logic    |    <0.001 |      309 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       94 |     63400 |            0.15 |
 |   Register     |    <0.001 |      142 |    126800 |            0.11 |
 |   CARRY4       |    <0.001 |       20 |     15850 |            0.13 |
-|   Others       |     0.000 |       32 |       --- |             --- |
-| Signals        |    <0.001 |      267 |       --- |             --- |
+|   Others       |     0.000 |       31 |       --- |             --- |
+| Signals        |    <0.001 |      268 |       --- |             --- |
 | MMCM           |     0.086 |        1 |         6 |           16.67 |
-| I/O            |     0.010 |       24 |       210 |           11.43 |
+| I/O            |     0.004 |       24 |       210 |           11.43 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.194 |          |           |                 |
+| Total          |     0.187 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
 | Vccaux    |       1.800 |     0.066 |       0.048 |      0.018 |
-| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -143,7 +143,7 @@ Table of Contents
 +-----------------------------------------+-----------+
 | Name                                    | Power (W) |
 +-----------------------------------------+-----------+
-| eggtimer                                |     0.097 |
+| eggtimer                                |     0.090 |
 |   bcdm                                  |    <0.001 |
 |   clk_05Hz                              |    <0.001 |
 |   clk_1Hz                               |    <0.001 |
@@ -171,7 +171,6 @@ Table of Contents
 |               no_pipelining.the_addsub  |    <0.001 |
 |                 i_lut6.i_lut6_addsub    |    <0.001 |
 |                   i_q.i_simple.qreg     |    <0.001 |
-|   increment                             |    <0.001 |
 +-----------------------------------------+-----------+
 
 

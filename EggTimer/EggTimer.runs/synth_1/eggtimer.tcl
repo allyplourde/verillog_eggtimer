@@ -23,7 +23,6 @@ add_files -quiet w:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sour
 set_property used_in_implementation false [get_files w:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/ip/c_counter_binary_db/c_counter_binary_db.dcp]
 read_verilog -library xil_defaultlib {
   W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/down_counter.v
-  W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/set_timer.v
   W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/imports/new/clk_div.v
   W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/count_time.v
   W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/debounce.v

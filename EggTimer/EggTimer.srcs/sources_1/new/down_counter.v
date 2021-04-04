@@ -39,9 +39,13 @@ module down_counter #(parameter MAX = 59)(
         end
 
         else if (enable) begin
-            if (count == 0) begin
-                count <= MAX;
+            if (count == 1) begin
+                count <= 0;
                 threshold <= 1;
+            end
+            else if (count == 0) begin
+                count <= MAX;
+                threshold <= 0;
             end
             else begin 
                 count <= count - 1;

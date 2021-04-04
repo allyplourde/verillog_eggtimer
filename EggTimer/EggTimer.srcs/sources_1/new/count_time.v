@@ -34,14 +34,14 @@ module count_time(
     wire sec_th, min_th;
     
     down_counter seconds_counter(
-        .CLK(clk), .enable(enable & (~time_up)), .load(load), .count(seconds),
+        .CLK(clk), .enable(enable & (~time_up) | load), .load(load), .count(seconds),
         .threshold(sec_th), .reset(reset), .data(in_sec)
         );
     
 //    clk_div #(60) minutes_clk(.CLKIN(clk), .CLKOUT(clk_min));
     
     down_counter minutes_counter(
-        .CLK(sec_th), .enable(enable & (~time_up)), .load(load), .count(minutes),
+        .CLK(clk), .enable(sec_th & enable & (~time_up) | load), .load(load), .count(minutes),
         .threshold(min_th), .reset(reset), .data(in_min)
         );
     

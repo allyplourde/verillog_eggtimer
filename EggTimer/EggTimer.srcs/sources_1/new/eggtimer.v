@@ -35,8 +35,6 @@ module eggtimer(
     output enabled
     );
     
-    assign enabled = enable;
-    
     // Clocks configuration
     wire CLK5MHZ, CLK500HZ, CLK1HZ;
     clk_wiz_0 clk_5MHz(.clk_out1(CLK5MHZ), .reset(), .locked(), .clk_in1(CLK100MHZ));
@@ -51,14 +49,15 @@ module eggtimer(
     
     reg [3:0] state, nextstate;
     reg enable_cnt = 0;
+    reg load_time = 0;
     wire time_up;
     // State definitions
     parameter RST=0, STANDBY=1, SET=2, COUNT=3, END=4;
     wire [5:0] seconds, minutes;
     reg [5:0] sec_display, min_display;
+    reg [5:0] cook_sec, cook_min;
     
-    
-    always @ (state or start or time_up) begin // always block to determine next state
+    always @ (state or start or time_up or cook_time) begin // always block to determine next state
         case (state)
             RST: nextstate <= STANDBY;
             
@@ -69,7 +68,7 @@ module eggtimer(
             SET: if (~cook_time) nextstate <= STANDBY;
                  else nextstate <= SET;
             
-            COUNT: if (time_up == 1) nextstate <= END;
+            COUNT: if (time_up) nextstate <= END;
                    else if (enable) nextstate <= COUNT;
                    else nextstate <= STANDBY;
                    
@@ -79,7 +78,7 @@ module eggtimer(
         endcase
     end
     
-    always @ (*) begin //always block to update output
+    always @ (state) begin //always block to update output
         case (state)
             RST: enable_cnt <= 0;
             
@@ -97,13 +96,24 @@ module eggtimer(
             
             END: enable_cnt <= 0;
             
-            default: enable_cnt <= 0;
+            default: begin enable_cnt <= 0; sec_display <= seconds; min_display <= minutes; end
         endcase
     end
 
     always @(posedge CLK5MHZ, posedge rst) begin
         if (rst) state <= RST;
         else state <= nextstate;
+    end
+
+    // Set timer block
+    always @(posedge ssd) begin
+        if (cook_sec >= 6'd59) cook_sec <= 0;
+        else cook_sec <= cook_sec + 1;
+    end
+        
+    always @(posedge smd) begin
+        if (cook_min >= 6'd59) cook_min <= 0;
+        else cook_min <= cook_min + 1;
     end
     
     count_time cnt_down (
@@ -119,9 +129,9 @@ module eggtimer(
         .time_up(time_up)
     ); 
     
-    set_timer increment(.inc_sec(ssd), .inc_min(smd), .seconds(cook_sec), .minutes(cook_min));
+//    set_timer increment(.inc_sec(ssd), .inc_min(smd), .seconds(cook_sec), .minutes(cook_min));
     
-    
+    assign enabled = enable;
     assign timer_on = CLK0_5HZ & enable_cnt;
     
     // BCD Display Driver

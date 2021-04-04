@@ -26,6 +26,8 @@ module set_timer(
     output reg [5:0] seconds, minutes
     );
     
+    
+    
     always @(posedge inc_sec) begin
         if (seconds >= 6'd59) seconds <= 0;
         else seconds <= seconds + 1;

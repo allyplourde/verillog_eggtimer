@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue Mar 30 16:32:18 2021
-# Process ID: 7080
+# Start of session at: Tue Mar 30 18:47:53 2021
+# Process ID: 5924
 # Current directory: W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1
 # Command line: vivado.exe -log eggtimer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eggtimer.tcl
 # Log file: W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/eggtimer.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14036 
+INFO: Helper process launched with PID 8520 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 342.203 ; gain = 131.738
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 342.066 ; gain = 131.281
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'eggtimer' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:23]
 	Parameter RST bound to: 0 - type: integer 
@@ -25,8 +25,8 @@ INFO: [Synth 8-638] synthesizing module 'eggtimer' [W:/ELEC3500/ELEC3500_LAB_9/E
 	Parameter SET bound to: 2 - type: integer 
 	Parameter COUNT bound to: 3 - type: integer 
 	Parameter END bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'clk_div' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/imports/new/clk_div.v:23]
 	Parameter DIV bound to: 10000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'clk_div' (2#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/imports/new/clk_div.v:23]
@@ -37,28 +37,26 @@ INFO: [Synth 8-638] synthesizing module 'clk_div__parameterized1' [W:/ELEC3500/E
 	Parameter DIV bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'clk_div__parameterized1' (2#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/imports/new/clk_div.v:23]
 INFO: [Synth 8-638] synthesizing module 'debounce' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/debounce.v:24]
-INFO: [Synth 8-638] synthesizing module 'c_counter_binary_db' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/realtime/c_counter_binary_db_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_db' (3#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/realtime/c_counter_binary_db_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_db' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/realtime/c_counter_binary_db_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_db' (3#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/realtime/c_counter_binary_db_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'debounce' (4#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/debounce.v:24]
-WARNING: [Synth 8-567] referenced signal 'cook_time' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:61]
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:61]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:60]
+WARNING: [Synth 8-567] referenced signal 'cook_sec' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:81]
+WARNING: [Synth 8-567] referenced signal 'cook_min' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:81]
+WARNING: [Synth 8-567] referenced signal 'seconds' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:81]
+WARNING: [Synth 8-567] referenced signal 'minutes' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:81]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:81]
 INFO: [Synth 8-638] synthesizing module 'count_time' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/count_time.v:23]
 INFO: [Synth 8-638] synthesizing module 'down_counter' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/down_counter.v:23]
 	Parameter MAX bound to: 59 - type: integer 
 WARNING: [Synth 8-5788] Register threshold_reg in module down_counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/down_counter.v:37]
 INFO: [Synth 8-256] done synthesizing module 'down_counter' (5#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/down_counter.v:23]
 INFO: [Synth 8-256] done synthesizing module 'count_time' (6#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/count_time.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'in_sec' does not match port width (6) of module 'count_time' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:114]
-WARNING: [Synth 8-689] width (1) of port connection 'in_min' does not match port width (6) of module 'count_time' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:115]
-INFO: [Synth 8-638] synthesizing module 'set_timer' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/set_timer.v:23]
-INFO: [Synth 8-256] done synthesizing module 'set_timer' (7#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/set_timer.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'seconds' does not match port width (6) of module 'set_timer' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:122]
-WARNING: [Synth 8-689] width (1) of port connection 'minutes' does not match port width (6) of module 'set_timer' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:122]
 INFO: [Synth 8-638] synthesizing module 'binary_to_BCD' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/imports/new/binary_to_BCD.v:23]
-INFO: [Synth 8-256] done synthesizing module 'binary_to_BCD' (8#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/imports/new/binary_to_BCD.v:23]
-INFO: [Synth 8-256] done synthesizing module 'eggtimer' (9#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_BCD' (7#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/imports/new/binary_to_BCD.v:23]
+INFO: [Synth 8-256] done synthesizing module 'eggtimer' (8#1) [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 379.484 ; gain = 169.020
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 379.344 ; gain = 168.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -68,21 +66,21 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 379.484 ; gain = 169.020
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 379.344 ; gain = 168.559
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'c_counter_binary_db' instantiated as 'dbs/db_counter'. 2 instances of this cell are unresolved black boxes. [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/debounce.v:41]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'clk_5MHz' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:42]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'clk_5MHz' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:40]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_5MHz'
-Finished Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_5MHz'
-Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbs/db_counter'
-Finished Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbs/db_counter'
-Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbm/db_counter'
-Finished Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbm/db_counter'
+Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_5MHz'
+Finished Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_5MHz'
+Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbs/db_counter'
+Finished Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbs/db_counter'
+Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbm/db_counter'
+Finished Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp_2/c_counter_binary_db_in_context.xdc] for cell 'dbm/db_counter'
 Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/constrs_1/imports/new/CONSTRAINT.xdc]
 Finished Parsing XDC File [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/constrs_1/imports/new/CONSTRAINT.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/constrs_1/imports/new/CONSTRAINT.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/eggtimer_propImpl.xdc].
@@ -92,24 +90,24 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 693.953 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 693.219 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-7080-me4166-11/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/.Xil/Vivado-5924-me4166-11/dcp/clk_wiz_0_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "threshold" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'eggtimer'
@@ -117,7 +115,7 @@ INFO: [Synth 8-5544] ROM "sec_display" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'enable_cnt_reg' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:84]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_cnt_reg' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:83]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -128,10 +126,10 @@ WARNING: [Synth 8-327] inferring latch for variable 'enable_cnt_reg' [W:/ELEC350
                      END |                              100 |                             0100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'eggtimer'
-WARNING: [Synth 8-327] inferring latch for variable 'min_display_reg' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:89]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_display_reg' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'min_display_reg' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_display_reg' [W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.srcs/sources_1/new/eggtimer.v:87]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -155,7 +153,7 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 11    
 +---Muxes : 
-	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 6     
 	   5 Input      6 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
@@ -171,9 +169,11 @@ Hierarchical RTL Component report
 Module eggtimer 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input      6 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 +---Muxes : 
@@ -207,14 +207,8 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 3     
-Module set_timer 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      6 Bit       Adders := 2     
-+---Registers : 
-	                6 Bit    Registers := 2     
 Module binary_to_BCD 
 Detailed RTL Component Info : 
 +---XORs : 
@@ -240,7 +234,7 @@ INFO: [Synth 8-3886] merging instance 'an_reg[6]' (FD) to 'an_reg[7]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\an_reg[7] )
 WARNING: [Synth 8-3332] Sequential element (an_reg[7]) is unused and will be removed from module eggtimer.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -257,10 +251,10 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_5MHz/clk_out1' to pin 'clk_5MHz/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -272,7 +266,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -297,7 +291,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_5MHz has unconnected pin reset
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -310,7 +304,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -322,25 +316,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -363,11 +357,11 @@ Report Cell Usage:
 |3     |clk_wiz_0              |     1|
 |4     |CARRY4                 |    12|
 |5     |LUT1                   |    55|
-|6     |LUT2                   |    19|
-|7     |LUT3                   |    17|
-|8     |LUT4                   |    20|
-|9     |LUT5                   |    22|
-|10    |LUT6                   |    18|
+|6     |LUT2                   |    10|
+|7     |LUT3                   |    12|
+|8     |LUT4                   |    34|
+|9     |LUT5                   |    23|
+|10    |LUT6                   |    20|
 |11    |FDCE                   |    15|
 |12    |FDRE                   |    76|
 |13    |FDSE                   |     4|
@@ -380,24 +374,23 @@ Report Instance Areas:
 +------+--------------------+------------------------+------+
 |      |Instance            |Module                  |Cells |
 +------+--------------------+------------------------+------+
-|1     |top                 |                        |   330|
+|1     |top                 |                        |   333|
 |2     |  bcdm              |binary_to_BCD           |     5|
 |3     |  clk_05Hz          |clk_div__parameterized1 |     3|
 |4     |  clk_1Hz           |clk_div__parameterized0 |    64|
 |5     |  clk_500Hz         |clk_div                 |    63|
-|6     |  cnt_down          |count_time              |    46|
-|7     |    minutes_counter |down_counter            |    23|
-|8     |    seconds_counter |down_counter_1          |    23|
+|6     |  cnt_down          |count_time              |    51|
+|7     |    minutes_counter |down_counter            |    21|
+|8     |    seconds_counter |down_counter_1          |    30|
 |9     |  dbm               |debounce                |    23|
 |10    |  dbs               |debounce_0              |    23|
-|11    |  increment         |set_timer               |    28|
 +------+--------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 693.953 ; gain = 109.547
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.953 ; gain = 483.488
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 693.219 ; gain = 109.082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 693.219 ; gain = 482.434
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -408,9 +401,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 13 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-54 Infos, 13 Warnings, 1 Critical Warnings and 0 Errors encountered.
+51 Infos, 13 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 693.953 ; gain = 424.867
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 693.219 ; gain = 424.836
 INFO: [Common 17-1381] The checkpoint 'W:/ELEC3500/ELEC3500_LAB_9/EggTimer/EggTimer/EggTimer.runs/synth_1/eggtimer.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 693.953 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 30 16:32:49 2021...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 693.219 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 30 18:48:24 2021...

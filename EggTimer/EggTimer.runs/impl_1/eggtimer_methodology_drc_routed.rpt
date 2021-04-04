@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Tue Mar 30 16:33:50 2021
+| Date         : Tue Mar 30 18:50:41 2021
 | Host         : me4166-11 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file eggtimer_methodology_drc_routed.rpt -rpx eggtimer_methodology_drc_routed.rpx
 | Design       : eggtimer
@@ -167,62 +167,62 @@ Related violations: <none>
 
 TIMING-17#25 Warning
 Non-clocked sequential cell  
-The clock pin increment/minutes_reg[0]/C is not reached by a timing clock
+The clock pin cook_min_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Warning
 Non-clocked sequential cell  
-The clock pin increment/minutes_reg[1]/C is not reached by a timing clock
+The clock pin cook_min_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Warning
 Non-clocked sequential cell  
-The clock pin increment/minutes_reg[2]/C is not reached by a timing clock
+The clock pin cook_min_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Warning
 Non-clocked sequential cell  
-The clock pin increment/minutes_reg[3]/C is not reached by a timing clock
+The clock pin cook_min_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Warning
 Non-clocked sequential cell  
-The clock pin increment/minutes_reg[4]/C is not reached by a timing clock
+The clock pin cook_min_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Warning
 Non-clocked sequential cell  
-The clock pin increment/minutes_reg[5]/C is not reached by a timing clock
+The clock pin cook_min_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Warning
 Non-clocked sequential cell  
-The clock pin increment/seconds_reg[0]/C is not reached by a timing clock
+The clock pin cook_sec_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Warning
 Non-clocked sequential cell  
-The clock pin increment/seconds_reg[1]/C is not reached by a timing clock
+The clock pin cook_sec_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Warning
 Non-clocked sequential cell  
-The clock pin increment/seconds_reg[2]/C is not reached by a timing clock
+The clock pin cook_sec_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Warning
 Non-clocked sequential cell  
-The clock pin increment/seconds_reg[3]/C is not reached by a timing clock
+The clock pin cook_sec_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Warning
 Non-clocked sequential cell  
-The clock pin increment/seconds_reg[4]/C is not reached by a timing clock
+The clock pin cook_sec_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#36 Warning
 Non-clocked sequential cell  
-The clock pin increment/seconds_reg[5]/C is not reached by a timing clock
+The clock pin cook_sec_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-18#1 Warning
